@@ -146,5 +146,28 @@ az storage account management-policy create --account-name storageclearview \
 
 > Opening the container's access policy returned a 403 ("This request is not authorized to perform this operation"). The storage firewall only allowed the IP I added earlier, and my VPN changed my source address. I confirmed my current IP, added it to the allowed list, waited a couple of minutes, and the page loaded. Lesson: storage firewall rules are based on the caller's source IP, so network changes can lock you out of your own account.
 
+# (Coming soon)
 
-(Coming soon)
+*The remaining steps in Part 2, followed by Parts 3 to 5, are added as they are completed.*
+
+---
+
+## Results, Challenges & What I Learned
+
+*Written after the lab is complete.*
+
+---
+
+## Production Considerations
+
+*Written after the lab is complete.*
+
+---
+
+## Cleanup
+
+*Written after the lab is complete. Cleanup order matters in this lab, because retention policies, soft delete, and active replication each block deletion.*
+
+---
+
+⬅️ [Back to main README](../README.md)
