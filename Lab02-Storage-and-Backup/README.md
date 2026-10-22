@@ -37,6 +37,8 @@ This lab builds on the [Lab 01](../01-identity-and-governance/) baseline: resour
 - Recovery Services vaults and Azure Backup
 - Azure Site Recovery (VM replication)
 
+*Outcome: secure, cost-aware storage and a tested backup and recovery baseline.*
+
 **Prerequisites**
 
 | Requirement | Details |
@@ -61,7 +63,7 @@ This lab builds on the [Lab 01](../01-identity-and-governance/) baseline: resour
 ## Cost & Safety Notes
 
 - A budget alert ($10) was set before deploying anything.
-- The backup lab deploys a VM and Site Recovery replication, which are the main cost drivers. I deleted everything the same day.
+- The backup lab deploys a VM and Site Recovery replication, which are the main cost drivers. I plan to delete everything the same day.
 - Screenshots are redacted of subscription IDs, emails, and my IP address. No screenshot shows a SAS URL or token, an access key, or the VM password.
 - The Lab 01 tag policy only applies to `rg-clearview-governance`, so I tagged each new resource group manually.
 
@@ -144,4 +146,5 @@ az storage account management-policy create --account-name storageclearview \
 
 > Opening the container's access policy returned a 403 ("This request is not authorized to perform this operation"). The storage firewall only allowed the IP I added earlier, and my VPN changed my source address. I confirmed my current IP, added it to the allowed list, waited a couple of minutes, and the page loaded. Lesson: storage firewall rules are based on the caller's source IP, so network changes can lock you out of your own account.
 
-🚧 In-progress and actively working on it
+
+(Coming soon)
